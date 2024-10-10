@@ -7,19 +7,23 @@
    <link rel="stylesheet" href="Asset/css/slick.css">
     <link rel="stylesheet" href="Asset/font-icon/fontawesome-free-6.6.0-web/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="Asset/css/style.css">
 </head>
 <body>
-
+    <label class="flex cursor-pointer gap-2">
+        <span class="label-text">Current</span>
+        <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+        <span class="label-text">Synthwave</span>
+      </label>
     <!-- header start -->
     <header classs="p-4 flex bg-lime-800 justify-between">
-      <div class=" max-w-screen-lg mx-auto">
+      <div class=" max-w-screen-xl mx-auto">
        <div class=" flex justify-between justify-center place-items-center">
         <span><img src="Asset/img/logo.png" alt=""></span>
         <ul class="flex ms-auto text-center me-5 ">
             <li class="mx-3 hover:text-[#2FAF4B] "><a href="#">হোম</a></li>
-            <li class="mx-3 hover:text-[#2FAF4B]"><a href="#"> <div class="flex place-items-center"> <label for="tribuj">কোর্সসমূহ</label> <select id="tribuj" class=" inline-block ml-2 w-1 h-1 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-green-500 ">
+            <li class="mx-3 hover:text-[#2FAF4B]"><a href="#"> <div class="flex place-items-center"> <label for="tribuj">কোর্সসমূহ</label> <select id="tribuj" class="  inline-block ml-2 w-2 h-2 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-green-500 ">
                 <option selected>1 Person</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -83,7 +87,7 @@
 <!-- cours catagory start  -->
 
         <section class="mt-[30px] catagory pb-[50px]">
-            <div class="container max-w-screen-lg mx-auto">
+            <div class="container max-w-screen-xl mx-auto">
                 <div class="cours-catagory flex items-center justify-center ">
                     <div class=" h-1 bg-black  w-[34px]"></div>
                     <span class="px-3 text-[#2FAF4B]">কোর্স ক্যাটাগরি</span>
@@ -91,7 +95,7 @@
                 </div>
 
 
-                <div class=" max-w-screen-xl grid grid-cols-4 gap-0  mt-[30px]">
+                <div class=" max-w-screen-xl grid grid-cols-4 gap-[5px]  mt-[30px]">
                    <img class=" mx-auto" src="Asset/img/ctg-1.png" alt="image">
                    <img class=" mx-auto " src="Asset/img/ctg-2.png"alt="image">
                    <img class=" mx-auto "src="Asset/img/ctg-3.png" alt="image">
@@ -104,21 +108,207 @@
 
 
  <!-- online cours start -->
+<section class=" online-cours pb-[50px]">
+    <section class="mt-[50px] relative">
+        <div class="container max-w-screen-xl mx-auto ">
+           <div class="">
+            <div class="cours-catagory flex items-center   ">
+               <div class=" justify-center flex items-center mx-auto">
+                <div class=" h-1 bg-black  w-[34px]"></div>
+                <span class="px-3 text-[#2FAF4B]">অনলাইন কোর্স</span>
+                <div class=" h-1 bg-black  w-[34px]"></div>
 
- <section class="mt-[30px]">
-    <div class="container max-w-screen-lg mx-auto">
-        <div class="cours-catagory flex items-center justify-center ">
-            <div class=" h-1 bg-black  w-[34px]"></div>
-            <span class="px-3 text-[#2FAF4B]">অনলাইন কোর্স</span>
-            <div class=" h-1 bg-black  w-[34px]"></div>
+               </div>
+
+                <div class=" absolute flex ml-[1180px] justify-center gap-[5px]">
+                    <i class="fa-solid fa-arrow-left border border-green-500 text-center justify-center items-center grid   rounded-full text-green-500 w-[30px] h-[30px]"></i>
+                    <i class="fa-solid fa-arrow-right  border border-green-500 text-center justify-center items-center grid rounded-full text-green-500 mr-[30px]   w-[30px] h-[30px]"></i>
+                </div>
+            </div>  
         </div>
+    </section>
+    <!--  -->
 
-        <div></div>
+<div class=" container max-w-screen-xl mx-auto">
+    <div class=" grid grid-cols-3 gap-2">
+        <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+            <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-1.png" alt=""> 
 
+            <div class="mt-[30px]">
+                <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+                <span class="text-lg font-bold w-[84px] ps-2 text-black mb-4 hover:text-green-500 mt-[15px]">৳2000</span>
+               <div class="mx-auto text-center">
+                <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+             </div>
+         </div>
+       </div>
+
+       <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+        <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-2.png" alt="">
+
+        <div class="mt-[30px]">
+            <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+          <div>
+            <span class="text-lg font-bold w-[84px] ps-2 text-black mb-4 hover:text-green-500 mt-[15px]">৳2000</span> 
+            <span class="text-gray-500 line-through">৳3000</span>
+          </div>
+
+           <div class="mx-auto text-center">
+            <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+         </div>
+     </div>
+   </div>
+
+   <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+    <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-3.png" alt="">
+
+    <div class="mt-[30px]">
+        <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+        <span class="text-lg font-bold w-[84px] ps-2 text-green-500 mb-4 hover:text-black-500 mt-[15px]">Free</span>
+       <div class="mx-auto text-center">
+        <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+     </div>
+ </div>
+</div>
+     </div>
+ </div>
+</div>
+
+
+<section class="mt-[30px]">
+    <div class=" mx-auto ">
+       <div class="">
+        <div class=" flex justify-center ">
+           
+            <span class="text-white bg-black px-[50px] py-[10px] hover:text-white hover:bg-green-500">সকল অনলাইন কোর্স দেখুন</span>
+        
+        </div>
+       
     </div>
 </section>
 
+</section>
+
+
+
   <!-- online cours end -->
+
+
+
+
+  <!-- ofline cours start -->
+
+<section class=" ofline-cours pb-[50px]">
+    
+    <section class="mt-[50px] relative">
+        <div class="container max-w-screen-xl mx-auto ">
+           <div class="">
+            <div class="cours-catagory flex items-center   ">
+               <div class=" justify-center flex items-center mx-auto">
+                <div class=" h-1 bg-black  w-[34px]"></div>
+                <span class="px-3 text-[#2FAF4B]">অফলাইন কোর্স</span>
+                <div class=" h-1 bg-black  w-[34px]"></div>
+
+               </div>
+
+                <div class=" absolute flex ml-[1180px] justify-center gap-[5px]">
+                    <i class="fa-solid fa-arrow-left border border-green-500 text-center justify-center items-center grid   rounded-full text-green-500 w-[30px] h-[30px]"></i>
+                    <i class="fa-solid fa-arrow-right  border border-green-500 text-center justify-center items-center grid rounded-full text-green-500 mr-[30px]   w-[30px] h-[30px]"></i>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!--  -->
+   
+   <div class=" container max-w-screen-xl mx-auto">
+       <div class=" grid grid-cols-3 gap-2">
+           <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+               <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-1.png" alt=""> 
+   
+               <div class="mt-[30px]">
+                   <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+                   <span class="text-lg font-bold w-[84px] ps-2 text-black mb-4 hover:text-green-500 mt-[15px]">৳2000</span>
+                  <div class="mx-auto text-center">
+                   <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+                </div>
+            </div>
+          </div>
+   
+          <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+           <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-2.png" alt="">
+   
+           <div class="mt-[30px]">
+               <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+             <div>
+               <span class="text-lg font-bold w-[84px] ps-2 text-black mb-4 hover:text-green-500 mt-[15px]">৳2000</span> 
+               <span class="text-gray-500 line-through">৳3000</span>
+             </div>
+   
+              <div class="mx-auto text-center">
+               <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+            </div>
+        </div>
+      </div>
+   
+      <div class=" mt-[30px] mx-auto shadow-[10px_10px_15px_0_rgba(0,0,0,0.3)] max-w-[355px] mx-auto pb-4 bg-[#FFFFFF]">
+       <img class=" object-cover w-[100%] h-auto  " src="Asset/img/Online-3.png" alt="">
+   
+       <div class="mt-[30px]">
+           <p class="font-semibold hover:text-green-500 text-xs w-[250px] ps-2 leading-6 mb-4 mt-[15px]">SSC 2023 Bangla+ICT Board <br> Question Solving Crash Course</p>
+           <span class="text-lg font-bold w-[84px] ps-2 text-green-500 mb-4 hover:text-black-500 mt-[15px]">Free</span>
+          <div class="mx-auto text-center">
+           <button class="border border-green-500 text-green-500 h-[40px] w-[330px] mt-[15px] hover:bg-green-500 hover:text-white transition">বিস্তারিত</button>
+        </div>
+    </div>
+   </div>
+        </div>
+    </div>
+   </div>
+
+   <!--  -->
+
+   <section class="mt-[30px]">
+    <div class=" mx-auto ">
+       <div class="">
+        <div class=" flex justify-center ">
+           
+            <span class="text-white bg-black px-[50px] py-[10px] hover:text-white hover:bg-green-500">সকল অফলাইন কোর্স দেখুন</span>
+        
+        </div>
+       
+    </div>
+</section>
+   
+   </section>
+   
+
+   <!-- ofline cours end  -->
+
+
+   <!-- book box start -->
+        <section>
+                 
+    <section class="mt-[50px] relative">
+        <div class="container max-w-screen-xl mx-auto ">
+           <div class="">
+            <div class="cours-catagory flex items-center   ">
+               <div class=" justify-center flex items-center mx-auto">
+                <div class=" h-1 bg-black  w-[34px]"></div>
+                <span class="px-3 text-[#2FAF4B]">আমাদের বইসমূহ</span>
+                <div class=" h-1 bg-black  w-[34px]"></div>
+
+               </div>
+
+                <div class=" absolute flex ml-[1180px] justify-center gap-[5px]">
+                    <i class="fa-solid fa-arrow-left border border-green-500 text-center justify-center items-center grid   rounded-full text-green-500 w-[30px] h-[30px]"></i>
+                    <i class="fa-solid fa-arrow-right  border border-green-500 text-center justify-center items-center grid rounded-full text-green-500 mr-[30px]   w-[30px] h-[30px]"></i>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!--  -->
+        </section>
+   <!-- book box end -->
 
 <br>
 <br><br><br>
@@ -127,3 +317,6 @@
 <script src="Asset/js/custom.js"></script>
 </body>
 </html>
+
+
+
